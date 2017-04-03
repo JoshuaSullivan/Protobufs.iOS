@@ -32,7 +32,7 @@
 		8A30E52954B83CD093602BD3 /* Pods-ProtobufsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtobufsTests/Pods-ProtobufsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC37D9BC1E92C6DD004B5E39 /* Protobufs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Protobufs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC37D9BF1E92C6DD004B5E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC37D9C11E92C6DD004B5E39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC37D9C11E92C6DD004B5E39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Protobufs/ViewController/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		BC37D9C41E92C6DD004B5E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC37D9C61E92C6DD004B5E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC37D9C91E92C6DD004B5E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,18 +98,16 @@
 		BC37D9BE1E92C6DD004B5E39 /* Protobufs */ = {
 			isa = PBXGroup;
 			children = (
+				BC37D9BF1E92C6DD004B5E39 /* AppDelegate.swift */,
+				BC37D9C61E92C6DD004B5E39 /* Assets.xcassets */,
 				BC685B741E92E5D800D9156C /* Extension */,
 				BC685B761E92E5D800D9156C /* Model */,
 				BC685B771E92E5D800D9156C /* Protocol */,
 				BC685B781E92E5D800D9156C /* Service */,
-				BC685B791E92E5D800D9156C /* View */,
 				BC685B7A1E92E5D800D9156C /* ViewController */,
-				BC37D9BF1E92C6DD004B5E39 /* AppDelegate.swift */,
-				BC37D9C11E92C6DD004B5E39 /* ViewController.swift */,
-				BC37D9C31E92C6DD004B5E39 /* Main.storyboard */,
-				BC37D9C61E92C6DD004B5E39 /* Assets.xcassets */,
-				BC37D9C81E92C6DD004B5E39 /* LaunchScreen.storyboard */,
-				BC37D9CB1E92C6DD004B5E39 /* Info.plist */,
+				BC685B791E92E5D800D9156C /* View */,
+				BC685B7C1E92E66000D9156C /* UserInterface */,
+				BC685B7D1E92E68300D9156C /* Resources */,
 			);
 			path = Protobufs;
 			sourceTree = "<group>";
@@ -161,8 +159,26 @@
 		BC685B7A1E92E5D800D9156C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BC37D9C11E92C6DD004B5E39 /* ViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BC685B7C1E92E66000D9156C /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				BC37D9C31E92C6DD004B5E39 /* Main.storyboard */,
+				BC37D9C81E92C6DD004B5E39 /* LaunchScreen.storyboard */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		BC685B7D1E92E68300D9156C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC37D9CB1E92C6DD004B5E39 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D0219714B17AA2D3D14D5BAF /* Pods */ = {
@@ -410,6 +426,7 @@
 				BC37D9C41E92C6DD004B5E39 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BC37D9C81E92C6DD004B5E39 /* LaunchScreen.storyboard */ = {
@@ -418,6 +435,7 @@
 				BC37D9C91E92C6DD004B5E39 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
